@@ -15,5 +15,11 @@ test('Verify valid login', async({page})=>
 
 }
 )
+test('Navigation', async({page})=>
+{
+const loginPage=new LoginPage(page);
+await page.goto('https://practice.expandtesting.com/login');
+}
+);
 
 
